@@ -38,12 +38,8 @@ function showList(array) {
 
 document.addEventListener("DOMContentLoaded", (e) => {
   const arreglofiltrado = strangeArray.filter((elementos) => typeof elementos === "string");
-   arreglofiltrado.sort();
+  arreglofiltrado.sort((elemento1, elemento2) => elemento1.localeCompare(elemento2));
   showList(arreglofiltrado);
 });
 
 
-//document.addEventListener("DOMContentLoaded", (e) => {
-  // Escribe tu solución aquí
-  // Sugerencia de cómo mostrar el array => showList(strangeArray);
-//});
